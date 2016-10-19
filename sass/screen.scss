@@ -55,7 +55,7 @@ p{
         width: 285px;
         height: 127px;
         display: block;
-        margin: 0 auto;
+        margin: 2em auto 0;
         background-size: contain;
     }
 
@@ -123,6 +123,9 @@ p{
 }
 
 .site-footer{
+    background: rgba(0,0,0,.9);
+    padding: 2em 4em;
+    color: #555;
 
     .social-links{
         float: right;
@@ -152,5 +155,32 @@ p{
                 background-position: -61px 0;
             }
         }
+    }
+}
+
+
+
+.images{
+    padding-top: 2em;
+    display: flex;
+    height: 200px;
+
+    > div{
+        width: 33.333%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .image-1{
+        background-image: url('../img/food1.jpeg');
+    }
+
+    .image-2{
+        background-image: url('../img/food2.jpeg');
+    }
+
+    .image-3{
+        background-image: url('../img/food3.jpeg');
     }
 }
