@@ -78,7 +78,8 @@ p{
     text-align: center;
 
     h2{
-        font-size: 2em;
+        font-size: 1.6em;
+        margin-bottom: 1em;
         line-height: 1.4em;
     }
 
@@ -104,6 +105,8 @@ p{
 
         h3{
             color: #111;
+            font-size: .8em;
+            line-height: 1.2em
         }
 
         p{
@@ -112,8 +115,6 @@ p{
             margin: .5em 0;
         }
     }
-
-    
 
     &:hover{
         
@@ -128,33 +129,48 @@ p{
     color: #555;
 
     .social-links{
-        float: right;
         display: block;
         width: 120px;
+        margin: 2em auto;
+        zoom: 1;
+
+        &:after{
+            content: '';
+            display: block;
+            clear: both;
+            height: 0;
+            visibility: hidden;
+        }
 
         a{
             display: block;
             text-indent: -9999em;
-            height: 30px;
-            width: 30px;
-            background: url('../img/social-links-30.png') no-repeat 0 0;
+            height: 20px;
+            width: 20px;
             float: left;
-            margin-right: .25em;
-            opacity: .8;
+            margin: 0 .5em;
+            opacity: .3;
             transition: all .3s;
+            background: url('../img/facebook-logo-white.png') no-repeat 0 0;
+            background-size: contain;
 
             &:hover{
-                opacity: 1;
+                opacity: .8;
             }
 
             &.twitter{
-                background-position: -30px 0;
+                background-image: url('../img/twitter-logo-white.png');
             }
 
             &.instagram{
-                background-position: -61px 0;
+                background-image: url('../img/instagram-logo-white.png');
             }
         }
+    }
+
+    .copyright{
+        display: block;
+        text-align: center;
     }
 }
 
@@ -183,4 +199,40 @@ p{
     .image-3{
         background-image: url('../img/food3.jpeg');
     }
+}
+
+@media screen and (min-width: 760px){
+
+    .main-content{
+        h2{
+            font-size: 2em;
+            margin: 0;
+        }
+    }
+
+    .promo{
+        .text{
+            h3{
+                font-size: 1em;
+                line-height: 1.4em;
+            }
+        }
+    }
+
+    .site-footer{
+        .social-links{
+            float: right;
+            margin: 0;
+
+            a{
+                margin: 0 0 0 1em;
+            }
+        }
+
+        .copyright{
+            text-align: left;  
+        }
+        
+    }
+
 }
