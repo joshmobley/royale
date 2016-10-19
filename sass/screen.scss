@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat');
 
 body{
-    background: url('../img/wall-texture.jpg') no-repeat center;
+    background: url('../img/wall-texture-600.jpg') no-repeat center;
     background-size: cover;
     position: relative;
 
@@ -203,6 +203,10 @@ p{
 
 @media screen and (min-width: 760px){
 
+    body{
+        background-image: url('../img/wall-texture.jpg');
+    }
+
     .site-header{
         h1{
             width: 285px;
@@ -217,7 +221,7 @@ p{
 
     .main-content{
         padding: 0 4em;
-        
+
         h2{
             font-size: 2em;
             margin: 0;
