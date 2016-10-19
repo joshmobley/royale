@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <title>{{ site.title }}&ndash;{{ site.description }}</title>
+    <link rel="stylesheet" href="{{ site.url }}/css/screen.css" />
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>{{ site.title }}</h1>
+
+        <p class="address">{{ site.address.street }}
+            <span class="neighborhood">{{ site.address.neighborhood }}</span>
+        </p>
+    </header><!--.site-header-->
+
+    <main class="main-content">
+
+        <h2 class="serif">{{ site.description }}</p>
+
+        <h2 class="sans caps">Opening November 2016</p>
+
+        <a href="http://www.newsobserver.com/living/food-drink/mouthful-blog/article105786751.html" class="promo"   target="_blank">
+            {# <img src="{{ site.url }}/img/royale.jpg" /> #}
+            <div class="text">
+                <h3>Royale to open in former Battistella&rsquo;s space in downtown Raleigh</h3>
+                <p>The News &amp; Observer</p>
+            </div>
+        </a>
+
+    </main>
+
+    <footer class="site-footer">
+        <ul class="social-links">
+        {% for link in site.social %}
+            <li>
+                <a href="{{ link.url }}" class="{{ link.name | lower }}" target="_blank">{{ link.name }}</a>
+            </li>
+        {% endfor %}
+        </ul>
+        <p class="copyright">Copyright &copy; 2016 Royale. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

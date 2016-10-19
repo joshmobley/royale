@@ -1,0 +1,22 @@
+{
+  "name": "royale",
+  "version": "0.0.1",
+  "description": "Website for Royale Restaurant in Raleigh, NC.",
+  "dependencies": {
+    "gulp" : "latest",
+    "gulp-sass" : "latest",
+    "gulp-autoprefixer" : "latest",
+    "gulp-uglify" : "latest",
+    "gulp-clean-css" : "latest",
+    "gulp-typescript" : "~3.0.2",
+    "typescript" : "~2.0.3",
+    "gulp-twig" : "latest"
+  },
+  "devDependencies": {},
+  "repository": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Josh Mobley",
+  "license": "ISC"
+}

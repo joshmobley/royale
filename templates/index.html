@@ -1,0 +1,27 @@
+{% extends "layouts/default.html" %}
+
+{%
+set site = {
+    'title': 'Royale',
+    'description': 'An American-French bistro serving dinner.',
+    'url' : 'http://localhost:8888/royale',
+    'address' : {
+        'street' : '200 W. Martin Street',
+        'neighborhood' : 'City Market - Downtown Raleigh'
+    },
+    'social' : {
+        'twitter' : {
+            'name' : 'Twitter',
+            'url' : 'https://twitter.com/RoyaleRaleigh',
+        },
+        'facebook' : {
+            'name' : 'Facebook',
+            'url' : 'https://facebook.com/royale.raleigh',
+        },
+        'linkedin' : {
+            'name' : 'Instagram',
+            'url' : 'https://instagram.com/royaleraleigh/',
+        },
+    }
+}
+%}
