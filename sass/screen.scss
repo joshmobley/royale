@@ -61,7 +61,7 @@ p{
 
     .address{
         font-family: 'Abril Fatface', cursive;
-        font-size: 1.475em;
+        font-size: 1.2em;
         line-height: 1.2em;
 
         .neighborhood{
@@ -208,6 +208,11 @@ p{
             width: 285px;
             height: 127px;
         }
+            
+        .address{
+            font-size: 1.475em;
+        }
+        
     }
 
     .main-content{
