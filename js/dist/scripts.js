@@ -1,1 +1,0 @@
-var site={title:"royale",url:"www.royaleraleigh.com"};

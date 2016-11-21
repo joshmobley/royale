@@ -5,7 +5,7 @@
     <meta name="description" content="{{ site.description }}">
     <link rel="stylesheet" href="{{ site.url }}/css/screen.css" />
     <!--[if lt IE 9]>
-        <script src="{{ site.url }}/js/dist/html5shiv.js"></script>
+        <script src="{{ site.url }}/js/html5shiv.js"></script>
     <![endif]-->
 </head>
 <body>
@@ -22,7 +22,8 @@
 
         <h2 class="serif">{{ site.description }}</h2>
 
-        <h2 class="sans caps">Hours</h2>
+        <h2 class="sans caps"><span class="hours">Hours</span></h2>
+
         <dl class="sans">
             <dt>Monday - Thursday</dt>
             <dd>5pm to 11pm</dd>
@@ -31,14 +32,30 @@
             <dt>Closed Sunday</dt>
         </dl>
 
-        <a href="http://www.newsobserver.com/living/food-drink/mouthful-blog/article105786751.html" class="promo"   target="_blank">
+        <div class="promo">
             {# <img src="{{ site.url }}/img/royale.jpg" /> #}
             <div class="text">
-                <p>Latest News</p>
-                <h3 class="sans caps">Royale to open in former Battistella&rsquo;s space in downtown Raleigh</h3>
-                <p>The News &amp; Observer</p>
+                <h2 class="sans">News</h2>
+                <h3 class="sans caps">
+                    <a target="_blank" href="http://www.newsobserver.com/living/food-drink/mouthful-blog/article115643598.html">
+                    Royale opens Friday night in downtown Raleigh
+                    </a>
+                </h3>
+                <p>The News &amp; Observer | Nov 18, 2016</p>
+                <h3 class="sans caps">
+                    <a target="_blank" href="http://www.wral.com/royale-opens-friday-in-city-market/16234805/">
+                    Royale opens Friday in City Market
+                    </a>
+                </h3>
+                <p>WRAL | Nov 18, 2016</p>
+                <h3 class="sans caps">
+                    <a target="_blank" href="http://www.newsobserver.com/living/food-drink/mouthful-blog/article105786751.html">
+                    Royale to open in former Battistella&rsquo;s space in downtown Raleigh
+                    </a>
+                </h3>
+                <p>The News &amp; Observer | Oct 4, 2016</p>
             </div>
-        </a>
+        </div>
 
     </main>
 
@@ -59,6 +76,6 @@
         </ul>
         <p class="copyright">Copyright &copy; 2016 Royale. All rights reserved.</p>
     </footer>
-
+    
 </body>
 </html>

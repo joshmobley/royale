@@ -8,7 +8,7 @@ var twig        = require('gulp-twig');
 
 var paths = {
     styles: ['sass/screen.scss'],
-    scripts: ['js/src/**/*.ts'],
+    scripts: ['js/**/*.ts'],
     templates: ['templates/**/*.html'],
     images: ['img/*'],
 };
@@ -30,7 +30,7 @@ gulp.task( 'scripts', function(){
             out: 'scripts.js'
         }))
         .pipe( uglify() ) //compress
-        .pipe( gulp.dest('./js/dist/')) //save to disk
+        .pipe( gulp.dest('js/')) //save to disk
 
 });
 
