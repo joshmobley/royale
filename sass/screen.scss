@@ -20,12 +20,36 @@ body{
     }
 }
 
+a{ 
+    color: #111;
+    transition: all .3s;
+    text-decoration: none;
+    
+    &:hover{
+        color: purple;
+    }
+}
+
+
 p{
     font-family: "Montserrat", sans-serif;
     line-height: 1.4em;
 }
 
-dl{ margin-top: 1em; }
+dl{ 
+    margin-top: 1em; 
+    margin-bottom: 2em;
+}
+
+dt a{
+    text-decoration: none;
+    color: #111;
+    transition: all .3s;
+
+    &:hover{
+        color: purple;
+    }
+}
 
 dd{
     margin-top: .25em;
@@ -100,7 +124,7 @@ dd + dt{
         margin-bottom: .25em;
 
         + h2{
-            margin-top: 1em;
+            margin-top: 2em;
         }
     }
 
